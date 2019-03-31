@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+    <servlet-name>bo</servlet-name>
+    <servlet-class>as.servlet.Trial</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Trial2</servlet-name>
+    <servlet-class>as.servlet.Trial2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlayerServlet</servlet-name>
+    <servlet-class>bg.servlet.PlayerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JudgerServlet</servlet-name>
+    <servlet-class>bg.servlet.JudgerServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>bo</servlet-name>
+    <url-pattern>/bo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Trial2</servlet-name>
+    <url-pattern>/Trial2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlayerServlet</servlet-name>
+    <url-pattern>/player</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JudgerServlet</servlet-name>
+    <url-pattern>/judger</url-pattern>
+  </servlet-mapping>
+</web-app>
